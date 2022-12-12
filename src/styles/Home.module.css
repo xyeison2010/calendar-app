@@ -1,0 +1,43 @@
+.container{
+    padding: 0 2rem;
+}
+.main{
+    padding: 4rem 0;
+   gap:12px;
+   margin:auto;
+}
+
+.calendar{
+  display: grid;
+  grid-template-columns: repeat(7 , 150px) ;
+  gap:12px ;
+  color: black;
+  justify-content: center;
+}
+.day{
+    display:  flex;
+    flex-direction:  column;
+    padding: 0.5rem;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 150px;
+    height: 150px;
+    background: url(../images/texto.png) top center;
+    background-size: contain;
+    overflow-y: auto;  /* si tenems muchos elementos scroll y */
+    font-size: 20px;
+    font-weight: lighter;
+}
+.nav{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap:12px;
+    text-transform: uppercase;
+    margin-bottom : 12px;
+    font-weight: bold;
+    color:black;
+    font-size: 28px;
+}
